@@ -1,0 +1,134 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KV Robux Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #181818;
+      color: white;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header.dark-mode {
+      background-color: #222;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00d084;
+      letter-spacing: 3px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .container.dark-mode {
+      background-color: #333;
+    }
+    .package {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      background-color: #fcfcfc;
+    }
+    .package.dark-mode {
+      background-color: #444;
+      border-color: #555;
+    }
+    .buy-btn {
+      background-color: #00b894;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .buy-btn:hover {
+      background-color: #019474;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #666;
+    }
+    .footer.dark-mode {
+      color: #ccc;
+    }
+    .toggle-button {
+      background-color: #00b894;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KV ROBUX</div>
+    <p>Buy Direct Robux with KBZ, Kpay, or WavePay</p>
+  </header>
+
+  <div class="container">
+    <h2>Available Robux Packages</h2>
+    <div class="package"><div>40 Robux</div><div>1,700 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>80 Robux</div><div>3,400 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>160 Robux</div><div>6,800 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>400 Robux</div><div>17,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>800 Robux</div><div>34,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>1200 Robux</div><div>51,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>1700 Robux</div><div>72,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>3200 Robux</div><div>136,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>4000 Robux</div><div>170,000 MMK</div><button class="buy-btn">Buy</button></div>
+    <div class="package"><div>5200 Robux</div><div>221,000 MMK</div><button class="buy-btn">Buy</button></div>
+    
+    <div class="contact">
+      <h3>Payment Methods</h3>
+      <p>KBZPay, WavePay, Kpay - အားလုံးလက်ခံပါသည်။</p>
+      <h3>Contact Us</h3>
+      <p>Order & Inquiry via Telegram: <a href="https://web.telegram.org/k/#7884481515" target="_blank">@KVSupport</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 KV Robux Store - All rights reserved.
+  </footer>
+
+  <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.querySelector('header').classList.toggle('dark-mode');
+      document.querySelector('.container').classList.toggle('dark-mode');
+      document.querySelectorAll('.package').forEach((pkg) => pkg.classList.toggle('dark-mode'));
+      document.querySelector('footer').classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+
